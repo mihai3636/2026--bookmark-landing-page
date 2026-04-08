@@ -412,6 +412,12 @@
     --tw-tracking: 2.31px;
     letter-spacing: 2.31px;
   }
+  .text-\[\#242A45\] {
+    color: #242A45;
+  }
+  .text-\[\#5267DF\] {
+    color: #5267DF;
+  }
   .text-white {
     color: var(--color-white);
   }
@@ -466,6 +472,16 @@
     :where(*[data-open='true']) & {
       --tw-translate-y: var(--spacing-0);
       translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .in-data-\[open\=\'true\'\]\:text-\[\#242A45\] {
+    :where(*[data-open='true']) & {
+      color: #242A45;
+    }
+  }
+  .in-data-\[open\=\'true\'\]\:text-white {
+    :where(*[data-open='true']) & {
+      color: var(--color-white);
     }
   }
   .md\:py-4 {
