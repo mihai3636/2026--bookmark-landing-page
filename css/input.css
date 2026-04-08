@@ -6,9 +6,11 @@
   --color-primary: #5267df;
   --color-primary-shade: #242a45;
   --color-secondary: #fa5959;
+  --color-background-transparent: rgba(36, 42, 69, 0.95);
 
   --color-grey-1: #f7f7f7;
   --color-grey-2: #5b6074;
+  --color-grey-transparent: rgb(151, 151, 151, 0.15);
 
   /* Font sizes */
   --text-1: 3rem; /* 48px */
