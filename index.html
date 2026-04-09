@@ -26,12 +26,12 @@
 
     <title>Frontend Mentor | Bookmark landing page</title>
   </head>
-  <body class="font-main bg-red-400 pt-5" data-open="false">
+  <body class="font-main bg-white pt-5" data-open="false">
     <header class="px-4">
       <div class="myContainer container mx-auto">
         <div class="flex justify-between">
           <svg
-            class="z-100 relative in-data-[open='true']:text-white text-[#242A45]"
+            class="z-100 relative in-data-[open='true']:text-white text-primary-shade"
             width="148"
             height="25"
             xmlns="http://www.w3.org/2000/svg"
@@ -44,14 +44,14 @@
               />
               <g>
                 <circle
-                  class="text-[#5267DF] in-data-[open='true']:text-white"
+                  class="text-primary in-data-[open='true']:text-white"
                   fill="currentColor"
                   cx="12.5"
                   cy="12.5"
                   r="12.5"
                 />
                 <path
-                  class="text-white in-data-[open='true']:text-[#242A45]"
+                  class="text-white in-data-[open='true']:text-primary-shade"
                   d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z"
                   fill="currentColor"
                 />
@@ -59,17 +59,23 @@
             </g>
           </svg>
 
-          <nav class="nav-desktop hidden">
-            <ul>
-              <li><a href="#">Features</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Login</a></li>
+          <nav class="lg:block hidden">
+            <ul class="flex gap-6 tp-6-regular text-primary-shade uppercase">
+              <li><a class="hover:text-secondary" href="#">Features</a></li>
+              <li><a class="hover:text-secondary" href="#">Pricing</a></li>
+              <li><a class="hover:text-secondary" href="#">Contact</a></li>
+              <li>
+                <a
+                  class="py-[0.75rem] px-4 rounded-[5px] hover:text-secondary text-white hover:bg-white bg-secondary ring-2 ring-secondary ring-inset"
+                  href="#"
+                  >Login</a
+                >
+              </li>
             </ul>
           </nav>
 
           <nav
-            class="nav-mobile -translate-y-full in-data-[open='true']:translate-y-0 transition-transform duration-200 fixed inset-0 pt-9 px-4 bg-background-transparent"
+            class="lg:hidden -translate-y-full in-data-[open='true']:translate-y-0 transition-transform duration-200 fixed inset-0 pt-9 px-4 bg-background-transparent"
           >
             <div
               class="container mx-auto pt-3 text-4 leading-[1.7] tracking-[2.31px] uppercase text-white"
@@ -111,7 +117,7 @@
 
           <button
             id="btnNavMobile"
-            class="hamburger cursor-pointer z-100 relative"
+            class="lg:hidden cursor-pointer z-100 relative"
           >
             <img
               class="in-data-[open='true']:hidden"
