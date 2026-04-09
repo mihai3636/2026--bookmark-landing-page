@@ -26,10 +26,13 @@
 
     <title>Frontend Mentor | Bookmark landing page</title>
   </head>
-  <body class="font-main bg-white pt-5" data-open="false">
-    <header class="px-4">
-      <div class="myContainer container mx-auto">
-        <div class="flex justify-between">
+  <body
+    class="md:space-y-9 space-y-5 font-main pt-5 bg-white text-primary-shade"
+    data-open="false"
+  >
+    <header>
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center">
           <svg
             class="z-100 relative in-data-[open='true']:text-white text-primary-shade"
             width="148"
@@ -60,13 +63,21 @@
           </svg>
 
           <nav class="lg:block hidden">
-            <ul class="flex gap-6 tp-6-regular text-primary-shade uppercase">
-              <li><a class="hover:text-secondary" href="#">Features</a></li>
-              <li><a class="hover:text-secondary" href="#">Pricing</a></li>
-              <li><a class="hover:text-secondary" href="#">Contact</a></li>
+            <ul
+              class="flex items-center gap-6 tp-6-regular text-primary-shade uppercase"
+            >
+              <li>
+                <a class="block hover:text-secondary" href="#">Features</a>
+              </li>
+              <li>
+                <a class="block hover:text-secondary" href="#">Pricing</a>
+              </li>
+              <li>
+                <a class="block hover:text-secondary" href="#">Contact</a>
+              </li>
               <li>
                 <a
-                  class="py-[0.75rem] px-4 rounded-[5px] hover:text-secondary text-white hover:bg-white bg-secondary ring-2 ring-secondary ring-inset"
+                  class="block py-1 px-4 rounded-[5px] hover:text-secondary text-white hover:bg-white bg-secondary ring-2 ring-secondary ring-inset"
                   href="#"
                   >Login</a
                 >
@@ -133,6 +144,36 @@
         </div>
       </div>
     </header>
+    <section class="hero">
+      <div class="container mx-auto px-4">
+        <div class="img-wrapper">
+          <img
+            src="./images//illustration-hero.svg"
+            alt="Desktop app with generic app"
+          />
+        </div>
+        <div class="flex flex-col gap-3 text-center">
+          <h1 class="tp-1-mobile md:tp-1">A Simple Bookmark Manager</h1>
+          <p class="tp-2-regular-mobile md:tp-4 text-primary-shade-50">
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for
+            free.
+          </p>
+          <div class="flex justify-center gap-2">
+            <a
+              class="tp-2-medium-mobile md:tp-6-medium bg-primary hover:bg-white text-white hover:text-primary ring-2 ring-primary ring-inset rounded-[5px] py-1 px-2"
+              href=""
+              >Get it on Chrome</a
+            >
+            <a
+              class="tp-2-medium-mobile md:tp-6-medium bg-grey-1 hover:bg-white text-primary-shade-75 hover:text-grey-2 hover:ring-2 ring-grey-2 ring-inset rounded-[5px] py-1 px-2"
+              href=""
+              >Get it on Firefox</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
 

@@ -8,6 +8,9 @@
   --color-secondary: #fa5959;
   --color-background-transparent: rgba(36, 42, 69, 0.95);
 
+  --color-primary-shade-50: rgba(36, 42, 69, 0.5);
+  --color-primary-shade-75: rgba(36, 42, 69, 0.75);
+
   --color-grey-1: #f7f7f7;
   --color-grey-2: #5b6074;
   --color-grey-transparent: rgb(151, 151, 151, 0.15);
@@ -59,70 +62,68 @@
   --spacing-10: 7.5rem; /* 120px */
 }
 
-@layer components {
-  .tp-1-mobile {
-    @apply text-3 leading-4 tracking-0 font-medium;
-  }
+/* Mobile */
+@utility tp-1-mobile {
+  @apply text-3 leading-4 tracking-0 font-medium;
+}
 
-  .tp-2-medium-mobile {
-    @apply text-7 leading-7 tracking-0 font-medium;
-  }
+@utility tp-2-medium-mobile {
+  @apply text-7 leading-7 tracking-0 font-medium;
+}
 
-  .tp-2-regular-mobile {
-    @apply text-7 leading-5 tracking-0 font-regular;
-  }
+@utility tp-2-regular-mobile {
+  @apply text-7 leading-5 tracking-0 font-regular;
+}
 
-  .tp-2-light-mobile {
-    @apply text-7 leading-7 tracking-0 font-light;
-  }
+@utility tp-2-light-mobile {
+  @apply text-7 leading-7 tracking-0 font-light;
+}
 
-  .tp-3-mobile {
-    @apply text-9 leading-8 tracking-3 font-medium;
-  }
+@utility tp-3-mobile {
+  @apply text-9 leading-8 tracking-3 font-medium;
+}
 
-  .tp-4-mobile {
-    @apply text-10 leading-2 tracking-1 font-medium italic;
-  }
+@utility tp-4-mobile {
+  @apply text-10 leading-2 tracking-1 font-medium italic;
+}
 
-  /* Desktop */
+/* Desktop */
+@utility tp-1 {
+  @apply text-1 leading-1 tracking-0 font-medium;
+}
 
-  .tp-1 {
-    @apply text-1 leading-1 tracking-0 font-medium;
-  }
+@utility tp-2 {
+  @apply text-2 leading-3 tracking-minus-1 font-medium;
+}
 
-  .tp-2 {
-    @apply text-2 leading-3 tracking-minus-1 font-medium;
-  }
+@utility tp-3 {
+  @apply text-4 leading-2 tracking-1 font-medium;
+}
 
-  .tp-3 {
-    @apply text-4 leading-2 tracking-1 font-medium;
-  }
+@utility tp-4 {
+  @apply text-5 leading-5 tracking-0 font-regular;
+}
 
-  .tp-4 {
-    @apply text-5 leading-5 tracking-0 font-regular;
-  }
+@utility tp-5-light {
+  @apply text-6 leading-6 tracking-2 font-light;
+}
 
-  .tp-5-light {
-    @apply text-6 leading-6 tracking-2 font-light;
-  }
+@utility tp-5-regular {
+  @apply text-6 leading-1 tracking-2 font-regular;
+}
 
-  .tp-5-regular {
-    @apply text-6 leading-1 tracking-2 font-regular;
-  }
+@utility tp-6-medium {
+  @apply text-8 leading-7 tracking-1 font-medium;
+}
 
-  .tp-6-medium {
-    @apply text-8 leading-7 tracking-1 font-medium;
-  }
+@utility tp-6-regular {
+  @apply text-8 leading-7 tracking-1 font-regular;
+}
 
-  .tp-6-regular {
-    @apply text-8 leading-7 tracking-1 font-regular;
-  }
+@utility tp-6-semi {
+  @apply text-8 leading-8 tracking-3 font-semi;
+}
 
-  .tp-6-semi {
-    @apply text-8 leading-8 tracking-3 font-semi;
-  }
-
-  .tp-7 {
-    @apply text-10 leading-2 tracking-1 font-medium italic;
-  }
+@utility tp-7 {
+  @apply text-10 leading-2 tracking-1 font-medium italic;
 }
