@@ -239,11 +239,77 @@
   .bottom-6 {
     bottom: var(--spacing-6);
   }
+  .left-1 {
+    left: var(--spacing-1);
+  }
+  .left-1\/12 {
+    left: calc(1 / 12 * 100%);
+  }
+  .left-2 {
+    left: var(--spacing-2);
+  }
+  .left-2\/12 {
+    left: calc(2 / 12 * 100%);
+  }
   .left-3 {
     left: var(--spacing-3);
   }
   .left-3\/12 {
     left: calc(3 / 12 * 100%);
+  }
+  .left-4 {
+    left: var(--spacing-4);
+  }
+  .left-4\/12 {
+    left: calc(4 / 12 * 100%);
+  }
+  .left-5 {
+    left: var(--spacing-5);
+  }
+  .left-5\/12 {
+    left: calc(5 / 12 * 100%);
+  }
+  .left-6 {
+    left: var(--spacing-6);
+  }
+  .left-6\/12 {
+    left: calc(6 / 12 * 100%);
+  }
+  .left-7 {
+    left: var(--spacing-7);
+  }
+  .left-7\/12 {
+    left: calc(7 / 12 * 100%);
+  }
+  .left-8 {
+    left: var(--spacing-8);
+  }
+  .left-8\/12 {
+    left: calc(8 / 12 * 100%);
+  }
+  .left-9 {
+    left: var(--spacing-9);
+  }
+  .left-9\/12 {
+    left: calc(9 / 12 * 100%);
+  }
+  .left-10 {
+    left: var(--spacing-10);
+  }
+  .left-10\/12 {
+    left: calc(10 / 12 * 100%);
+  }
+  .left-11 {
+    left: calc(var(--spacing) * 11);
+  }
+  .left-11\/12 {
+    left: calc(11 / 12 * 100%);
+  }
+  .left-19 {
+    left: calc(var(--spacing) * 19);
+  }
+  .left-19\/12 {
+    left: calc(19 / 12 * 100%);
   }
   .left-\[50\%\] {
     left: 50%;
@@ -321,6 +387,9 @@
   }
   .items-center {
     align-items: center;
+  }
+  .items-stretch {
+    align-items: stretch;
   }
   .justify-between {
     justify-content: space-between;
@@ -600,6 +669,31 @@
       color: var(--color-white);
     }
   }
+  .md\:container {
+    @media (width >= 48rem) {
+      width: 100%;
+      @media (width >= 40rem) {
+        max-width: 40rem;
+      }
+      @media (width >= 48rem) {
+        max-width: 48rem;
+      }
+      @media (width >= 64rem) {
+        max-width: 64rem;
+      }
+      @media (width >= 80rem) {
+        max-width: 80rem;
+      }
+      @media (width >= 96rem) {
+        max-width: 96rem;
+      }
+    }
+  }
+  .md\:mx-auto {
+    @media (width >= 48rem) {
+      margin-inline: auto;
+    }
+  }
   .md\:mt-9 {
     @media (width >= 48rem) {
       margin-top: var(--spacing-9);
@@ -673,6 +767,21 @@
       letter-spacing: var(--tracking-1);
     }
   }
+  .lg\:static {
+    @media (width >= 64rem) {
+      position: static;
+    }
+  }
+  .lg\:left-7\/12 {
+    @media (width >= 64rem) {
+      left: calc(7 / 12 * 100%);
+    }
+  }
+  .lg\:left-8\/12 {
+    @media (width >= 64rem) {
+      left: calc(8 / 12 * 100%);
+    }
+  }
   .lg\:col-1 {
     @media (width >= 64rem) {
       grid-column: 1;
@@ -688,9 +797,34 @@
       grid-row: 1;
     }
   }
+  .lg\:container {
+    @media (width >= 64rem) {
+      width: 100%;
+      @media (width >= 40rem) {
+        max-width: 40rem;
+      }
+      @media (width >= 48rem) {
+        max-width: 48rem;
+      }
+      @media (width >= 64rem) {
+        max-width: 64rem;
+      }
+      @media (width >= 80rem) {
+        max-width: 80rem;
+      }
+      @media (width >= 96rem) {
+        max-width: 96rem;
+      }
+    }
+  }
   .lg\:mx-0 {
     @media (width >= 64rem) {
       margin-inline: var(--spacing-0);
+    }
+  }
+  .lg\:mx-auto {
+    @media (width >= 64rem) {
+      margin-inline: auto;
     }
   }
   .lg\:mt-\[140px\] {
@@ -703,9 +837,24 @@
       display: block;
     }
   }
+  .lg\:grid {
+    @media (width >= 64rem) {
+      display: grid;
+    }
+  }
   .lg\:hidden {
     @media (width >= 64rem) {
       display: none;
+    }
+  }
+  .lg\:max-w-0 {
+    @media (width >= 64rem) {
+      max-width: var(--spacing-0);
+    }
+  }
+  .lg\:max-w-none {
+    @media (width >= 64rem) {
+      max-width: none;
     }
   }
   .lg\:grid-cols-2 {
@@ -733,6 +882,11 @@
       column-gap: var(--spacing-9);
     }
   }
+  .lg\:px-0 {
+    @media (width >= 64rem) {
+      padding-inline: var(--spacing-0);
+    }
+  }
   .lg\:px-8 {
     @media (width >= 64rem) {
       padding-inline: var(--spacing-8);
@@ -743,9 +897,29 @@
       text-align: start;
     }
   }
+  .xl\:relative {
+    @media (width >= 80rem) {
+      position: relative;
+    }
+  }
+  .xl\:mx-0 {
+    @media (width >= 80rem) {
+      margin-inline: var(--spacing-0);
+    }
+  }
+  .xl\:max-w-none {
+    @media (width >= 80rem) {
+      max-width: none;
+    }
+  }
   .xl\:gap-x-10 {
     @media (width >= 80rem) {
       column-gap: var(--spacing-10);
+    }
+  }
+  .\32 xl\:relative {
+    @media (width >= 96rem) {
+      position: relative;
     }
   }
 }
