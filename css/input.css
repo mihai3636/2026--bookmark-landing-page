@@ -13,6 +13,7 @@
 
   --color-grey-1: #f7f7f7;
   --color-grey-2: #5b6074;
+  --color-grey-3: #979797;
   --color-grey-transparent: rgb(151, 151, 151, 0.15);
 
   /* Font sizes */
@@ -126,4 +127,8 @@
 
 @utility tp-7 {
   @apply text-10 leading-2 tracking-1 font-medium italic;
+}
+
+@utility shadow-tab {
+  box-shadow: inset 0 -4px 0 var(--color-secondary);
 }
