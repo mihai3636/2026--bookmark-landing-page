@@ -26,7 +26,10 @@
 
     <title>Frontend Mentor | Bookmark landing page</title>
   </head>
-  <body class="font-main pt-5 bg-white text-primary-shade" data-open="false">
+  <body
+    class="font-main pt-5 pb-5 bg-white text-primary-shade"
+    data-open="false"
+  >
     <header class="px-4 md:px-6 lg:px-8">
       <div class="container mx-auto">
         <div class="flex justify-between items-center">
@@ -196,16 +199,16 @@
         </div>
 
         <ul
-          class="tabs tp-2-regular-mobile"
+          class="tabs tp-2-regular- md:tp-5-regular md:grid md:grid-cols-3"
           role="tablist"
           aria-label="Features"
         >
           <li
             role="presentation"
-            class="border-t border-b border-grey-3 flex justify-center"
+            class="border-t border-b border-grey-3 md:border-t-0 flex justify-center"
           >
             <button
-              class="block min-w-41 cursor-pointer py-2 hover:shadow-tab data-selected:shadow-tab opacity-75 data-selected:opacity-100"
+              class="block min-w-41 md:w-12/12 cursor-pointer py-2 [&:not([data-selected]):hover]:opacity-100 [&:not([data-selected]):hover]:text-secondary hover:shadow-tab data-selected:shadow-tab opacity-75 data-selected:opacity-100"
               type="button"
               role="tab"
               id="tab-1"
@@ -222,7 +225,7 @@
             class="border-b border-grey-3 flex justify-center"
           >
             <button
-              class="block min-w-41 cursor-pointer py-2 hover:shadow-tab data-selected:shadow-tab opacity-75 data-selected:opacity-100"
+              class="block min-w-41 md:w-12/12 cursor-pointer py-2 hover:opacity-100 [&:not([data-selected]):hover]:opacity-100 [&:not([data-selected]):hover]:text-secondary data-selected:shadow-tab opacity-75 data-selected:opacity-100"
               type="button"
               role="tab"
               id="tab-2"
@@ -238,7 +241,7 @@
             class="border-b border-grey-3 flex justify-center"
           >
             <button
-              class="block min-w-41 cursor-pointer py-2 hover:shadow-tab data-selected:shadow-tab opacity-75 data-selected:opacity-100"
+              class="block min-w-41 md:w-12/12 cursor-pointer py-2 [&:not([data-selected]):hover]:opacity-100 [&:not([data-selected]):hover]:text-secondary data-selected:shadow-tab opacity-75 data-selected:opacity-100"
               type="button"
               role="tab"
               id="tab-3"

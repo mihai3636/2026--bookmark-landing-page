@@ -29,6 +29,7 @@
     --text-3: 1.875rem;
     --text-4: 1.25rem;
     --text-5: 1.125rem;
+    --text-6: 1rem;
     --text-7: 0.9375rem;
     --text-8: 0.875rem;
     --leading-1: 1.1;
@@ -37,6 +38,7 @@
     --leading-7: 2;
     --tracking-0: 0px;
     --tracking-1: 0.25px;
+    --tracking-2: 0.5px;
     --font-weight-regular: 400;
     --spacing-0: 0rem;
     --spacing-1: 0.5rem;
@@ -434,6 +436,9 @@
   .pt-9 {
     padding-top: var(--spacing-9);
   }
+  .pb-5 {
+    padding-bottom: var(--spacing-5);
+  }
   .text-center {
     text-align: center;
   }
@@ -576,6 +581,13 @@
       }
     }
   }
+  .hover\:opacity-100 {
+    &:hover {
+      @media (hover: hover) {
+        opacity: 100%;
+      }
+    }
+  }
   .hover\:ring-2 {
     &:hover {
       @media (hover: hover) {
@@ -632,10 +644,25 @@
       margin-top: var(--spacing-9);
     }
   }
+  .md\:grid {
+    @media (width >= 48rem) {
+      display: grid;
+    }
+  }
+  .md\:w-12\/12 {
+    @media (width >= 48rem) {
+      width: calc(12 / 12 * 100%);
+    }
+  }
   .md\:-translate-x-4 {
     @media (width >= 48rem) {
       --tw-translate-x: calc(var(--spacing-4) * -1);
       translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .md\:grid-cols-3 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
   .md\:space-y-9 {
@@ -650,6 +677,18 @@
   .md\:gap-y-9 {
     @media (width >= 48rem) {
       row-gap: var(--spacing-9);
+    }
+  }
+  .md\:border-0 {
+    @media (width >= 48rem) {
+      border-style: var(--tw-border-style);
+      border-width: 0px;
+    }
+  }
+  .md\:border-t-0 {
+    @media (width >= 48rem) {
+      border-top-style: var(--tw-border-style);
+      border-top-width: 0px;
     }
   }
   .md\:px-2 {
@@ -689,6 +728,17 @@
       letter-spacing: var(--tracking-0);
     }
   }
+  .md\:tp-5-regular {
+    @media (width >= 48rem) {
+      font-size: var(--text-6);
+      --tw-leading: var(--leading-1);
+      line-height: var(--leading-1);
+      --tw-font-weight: var(--font-weight-regular);
+      font-weight: var(--font-weight-regular);
+      --tw-tracking: var(--tracking-2);
+      letter-spacing: var(--tracking-2);
+    }
+  }
   .md\:tp-6-medium {
     @media (width >= 48rem) {
       font-size: var(--text-8);
@@ -696,6 +746,17 @@
       line-height: var(--leading-7);
       --tw-font-weight: var(--font-weight-medium);
       font-weight: var(--font-weight-medium);
+      --tw-tracking: var(--tracking-1);
+      letter-spacing: var(--tracking-1);
+    }
+  }
+  .md\:tp-6-regular {
+    @media (width >= 48rem) {
+      font-size: var(--text-8);
+      --tw-leading: var(--leading-7);
+      line-height: var(--leading-7);
+      --tw-font-weight: var(--font-weight-regular);
+      font-weight: var(--font-weight-regular);
       --tw-tracking: var(--tracking-1);
       letter-spacing: var(--tracking-1);
     }
@@ -823,6 +884,16 @@
   .\32 xl\:relative {
     @media (width >= 96rem) {
       position: relative;
+    }
+  }
+  .\[\&\:not\(\[data-selected\]\)\:hover\]\:text-secondary {
+    &:not([data-selected]):hover {
+      color: var(--color-secondary);
+    }
+  }
+  .\[\&\:not\(\[data-selected\]\)\:hover\]\:opacity-100 {
+    &:not([data-selected]):hover {
+      opacity: 100%;
     }
   }
 }
