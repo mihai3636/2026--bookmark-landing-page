@@ -26,6 +26,7 @@
     --color-grey-3: #979797;
     --color-grey-transparent: rgb(151, 151, 151, 0.15);
     --text-1: 3rem;
+    --text-2: 2rem;
     --text-3: 1.875rem;
     --text-4: 1.25rem;
     --text-5: 1.125rem;
@@ -33,9 +34,11 @@
     --text-7: 0.9375rem;
     --text-8: 0.875rem;
     --leading-1: 1.1;
+    --leading-3: 1.25;
     --leading-4: 1.35;
     --leading-5: 1.55;
     --leading-7: 2;
+    --tracking-minus-1: -0.1px;
     --tracking-0: 0px;
     --tracking-1: 0.25px;
     --tracking-2: 0.5px;
@@ -228,11 +231,20 @@
   .right-0 {
     right: var(--spacing-0);
   }
+  .right-4 {
+    right: var(--spacing-4);
+  }
+  .right-4\/12 {
+    right: calc(4 / 12 * 100%);
+  }
   .bottom-0 {
     bottom: var(--spacing-0);
   }
   .bottom-6 {
     bottom: var(--spacing-6);
+  }
+  .left-0 {
+    left: var(--spacing-0);
   }
   .left-4 {
     left: var(--spacing-4);
@@ -369,6 +381,10 @@
   .rounded-l-\[316px\] {
     border-top-left-radius: 316px;
     border-bottom-left-radius: 316px;
+  }
+  .rounded-r-\[316px\] {
+    border-top-right-radius: 316px;
+    border-bottom-right-radius: 316px;
   }
   .border {
     border-style: var(--tw-border-style);
@@ -726,6 +742,17 @@
       letter-spacing: var(--tracking-0);
     }
   }
+  .md\:tp-2 {
+    @media (width >= 48rem) {
+      font-size: var(--text-2);
+      --tw-leading: var(--leading-3);
+      line-height: var(--leading-3);
+      --tw-font-weight: var(--font-weight-medium);
+      font-weight: var(--font-weight-medium);
+      --tw-tracking: var(--tracking-minus-1);
+      letter-spacing: var(--tracking-minus-1);
+    }
+  }
   .md\:tp-4 {
     @media (width >= 48rem) {
       font-size: var(--text-5);
@@ -773,6 +800,11 @@
   .lg\:static {
     @media (width >= 64rem) {
       position: static;
+    }
+  }
+  .lg\:right-8\/12 {
+    @media (width >= 64rem) {
+      right: calc(8 / 12 * 100%);
     }
   }
   .lg\:left-8\/12 {
@@ -825,6 +857,11 @@
       margin-inline: auto;
     }
   }
+  .lg\:mt-35 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 35);
+    }
+  }
   .lg\:mt-\[140px\] {
     @media (width >= 64rem) {
       margin-top: 140px;
@@ -863,6 +900,11 @@
   .lg\:justify-items-end {
     @media (width >= 64rem) {
       justify-items: end;
+    }
+  }
+  .lg\:justify-items-start {
+    @media (width >= 64rem) {
+      justify-items: start;
     }
   }
   .lg\:gap-x-9 {
