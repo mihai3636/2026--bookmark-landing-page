@@ -294,6 +294,15 @@
   .max-w-145 {
     max-width: calc(var(--spacing) * 145);
   }
+  .max-w-182 {
+    max-width: calc(var(--spacing) * 182);
+  }
+  .max-w-182\.5 {
+    max-width: calc(var(--spacing) * 182.5);
+  }
+  .max-w-\[730px\] {
+    max-width: 730px;
+  }
   .min-w-41 {
     min-width: calc(var(--spacing) * 41);
   }
