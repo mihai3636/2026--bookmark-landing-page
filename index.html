@@ -24,6 +24,13 @@
 
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
 
+    <style>
+      .separator {
+        height: 20px;
+        background-image: url(./images/bg-dots.svg);
+        background-repeat: repeat-x;
+      }
+    </style>
     <title>Frontend Mentor | Bookmark landing page</title>
   </head>
   <body
@@ -291,7 +298,7 @@
 
     <section class="extensions mt-10 lg:mt-35">
       <div
-        class="container mx-auto px-4 md:px-6 lg:px-8 space-y-6 md:space-y-9"
+        class="container mx-auto px-4 md:px-6 lg:px-8 space-y-5 md:space-y-8 lg:space-y-6"
       >
         <div
           class="section-header mx-auto max-w-145 flex flex-col gap-2 text-center"
@@ -302,10 +309,100 @@
             you’ve got a favourite you’d like us to prioritize.
           </p>
         </div>
-        <ul class="cards">
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
+        <ul class="cards space-y-6">
+          <li>
+            <article class="rounded-[15px] shadow-sm overflow-hidden">
+              <div class="px-3 py-3 text-center">
+                <img
+                  class="mx-auto mb-4"
+                  src="./images/logo-chrome.svg"
+                  alt="Google logo"
+                />
+                <h3 class="tp-1-mobile text-[1.5rem] md:tp-3 mb-1">
+                  Add to Chrome
+                </h3>
+                <p
+                  class="tp-2-regular-mobile md:tp-6-regular text-primary-shade-50"
+                >
+                  Minimum version 62
+                </p>
+              </div>
+
+              <div
+                class="h-2 bg-[url('../images/bg-dots.svg')] bg-repeat-x bg-center"
+              ></div>
+              <div class="px-3 pb-4 pt-3">
+                <a
+                  class="block tp-2-medium-mobile md:tp-6-medium text-center bg-primary hover:bg-white text-white hover:text-primary ring-2 ring-primary ring-inset rounded-[5px] py-1 px-3.5 md:px-2"
+                  href="#"
+                >
+                  Add & Install Extension
+                </a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="rounded-[15px] shadow-sm overflow-hidden">
+              <div class="px-3 py-3 text-center">
+                <img
+                  class="mx-auto mb-4"
+                  src="./images/logo-firefox.svg"
+                  alt="Google logo"
+                />
+                <h3 class="tp-1-mobile text-[1.5rem] md:tp-3 mb-1">
+                  Add to Firefox
+                </h3>
+                <p
+                  class="tp-2-regular-mobile md:tp-6-regular text-primary-shade-50"
+                >
+                  Minimum version 55
+                </p>
+              </div>
+
+              <div
+                class="h-2 bg-[url('../images/bg-dots.svg')] bg-repeat-x bg-center"
+              ></div>
+              <div class="px-3 pb-4 pt-3">
+                <a
+                  class="block tp-2-medium-mobile md:tp-6-medium text-center bg-primary hover:bg-white text-white hover:text-primary ring-2 ring-primary ring-inset rounded-[5px] py-1 px-3.5 md:px-2"
+                  href="#"
+                >
+                  Add & Install Extension
+                </a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="rounded-[15px] shadow-sm overflow-hidden">
+              <div class="px-3 py-3 text-center">
+                <img
+                  class="mx-auto mb-4"
+                  src="./images/logo-opera.svg"
+                  alt="Google logo"
+                />
+                <h3 class="tp-1-mobile text-[1.5rem] md:tp-3 mb-1">
+                  Add to Opera
+                </h3>
+                <p
+                  class="tp-2-regular-mobile md:tp-6-regular text-primary-shade-50"
+                >
+                  Minimum version 46
+                </p>
+              </div>
+
+              <div
+                class="h-2 bg-[url('../images/bg-dots.svg')] bg-repeat-x bg-center"
+              ></div>
+              <div class="px-3 pb-4 pt-3">
+                <a
+                  class="block tp-2-medium-mobile md:tp-6-medium text-center bg-primary hover:bg-white text-white hover:text-primary ring-2 ring-primary ring-inset rounded-[5px] py-1 px-3.5 md:px-2"
+                  href="#"
+                >
+                  Add & Install Extension
+                </a>
+              </div>
+            </article>
+          </li>
         </ul>
       </div>
     </section>
