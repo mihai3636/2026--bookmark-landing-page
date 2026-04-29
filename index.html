@@ -34,7 +34,7 @@
     <title>Frontend Mentor | Bookmark landing page</title>
   </head>
   <body
-    class="font-main pt-5 pb-5 bg-white text-primary-shade"
+    class="font-main pt-5 pb-5 pb-10 bg-white text-primary-shade"
     data-open="false"
   >
     <header class="px-4 md:px-6 lg:px-8">
@@ -410,6 +410,158 @@
             </article>
           </li>
         </ul>
+      </div>
+    </section>
+    <section class="faq mt-10 lg:mt-35">
+      <div class="container mx-auto px-4 md:px-6 lg:px-8 space-y-7">
+        <div
+          class="section-header mx-auto max-w-145 flex flex-col gap-2 text-center"
+        >
+          <h2 class="tp-1-mobile md:tp-2">Frequently Asked Questions</h2>
+          <p class="tp-2-regular-mobile md:tp-4 text-primary-shade-50">
+            Here are some of our FAQs. If you have any other questions you’d
+            like answered please feel free to email us.
+          </p>
+        </div>
+
+        <div class="accordions mx-auto max-w-145 text-center">
+          <div class="accordion py-2 border-b border-grey-transparent">
+            <h3 class="peer">
+              <button
+                id="accordion-header-1"
+                class="tp-2-regular-mobile cursor-pointer w-12/12 flex justify-between items-center [&[aria-expanded='true']_img]:rotate-180 hover:text-secondary"
+                aria-expanded="false"
+                aria-controls="accordion-panel-1"
+              >
+                <span>What is Bookmark?</span>
+                <img
+                  src="./images/icon-arrow.svg"
+                  alt="Icon arrow"
+                  aria-hidden="true"
+                  class="w-2 h-1 object-contain transition-transform duration-200"
+                />
+              </button>
+            </h3>
+
+            <div
+              id="accordion-panel-1"
+              class="grid grid-rows-[0fr] peer-[&:has(button[aria-expanded='true'])]:grid-rows-[1fr] transition-[grid-template-rows] duration-300"
+              role="region"
+              aria-labelledby="accordion-header-1"
+            >
+              <div class="overflow-hidden pt-2">
+                <p class="tp-2-light-mobile text-start text-primary-shade-50">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                  tincidunt justo eget ultricies fringilla. Phasellus blandit
+                  ipsum quis quam ornare mattis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- End accordion -->
+          <div class="accordion py-2 border-b border-grey-transparent">
+            <h3 class="peer">
+              <button
+                id="accordion-header-2"
+                class="tp-2-regular-mobile cursor-pointer w-12/12 flex justify-between items-center [&[aria-expanded='true']_img]:rotate-180 hover:text-secondary"
+                aria-expanded="false"
+                aria-controls="accordion-panel-2"
+              >
+                <span>How can I request a new browser?</span>
+                <img
+                  src="./images/icon-arrow.svg"
+                  alt="Icon arrow"
+                  aria-hidden="true"
+                  class="w-2 h-1 object-contain transition-transform duration-200"
+                />
+              </button>
+            </h3>
+
+            <div
+              id="accordion-panel-2"
+              class="grid grid-rows-[0fr] peer-[&:has(button[aria-expanded='true'])]:grid-rows-[1fr] transition-[grid-template-rows] duration-300"
+              role="region"
+              aria-labelledby="accordion-header-2"
+            >
+              <div class="overflow-hidden pt-2">
+                <p class="tp-2-light-mobile text-start text-primary-shade-50">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                  tincidunt justo eget ultricies fringilla. Phasellus blandit
+                  ipsum quis quam ornare mattis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- End accordion 2 -->
+          <div class="accordion py-2 border-b border-grey-transparent">
+            <h3 class="peer">
+              <button
+                id="accordion-header-3"
+                class="tp-2-regular-mobile cursor-pointer w-12/12 flex justify-between items-center [&[aria-expanded='true']_img]:rotate-180 hover:text-secondary"
+                aria-expanded="false"
+                aria-controls="accordion-panel-3"
+              >
+                <span>Is there a mobile app?</span>
+                <img
+                  src="./images/icon-arrow.svg"
+                  alt="Icon arrow"
+                  aria-hidden="true"
+                  class="w-2 h-1 object-contain transition-transform duration-200"
+                />
+              </button>
+            </h3>
+
+            <div
+              id="accordion-panel-3"
+              class="grid grid-rows-[0fr] peer-[&:has(button[aria-expanded='true'])]:grid-rows-[1fr] transition-[grid-template-rows] duration-300"
+              role="region"
+              aria-labelledby="accordion-header-3"
+            >
+              <div class="overflow-hidden pt-2">
+                <p class="tp-2-light-mobile text-start text-primary-shade-50">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                  tincidunt justo eget ultricies fringilla. Phasellus blandit
+                  ipsum quis quam ornare mattis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- End accordion 3 -->
+          <div class="accordion py-2 border-b border-grey-transparent">
+            <h3 class="peer">
+              <button
+                id="accordion-header-4"
+                class="tp-2-regular-mobile cursor-pointer w-12/12 flex justify-between items-center [&[aria-expanded='true']_img]:rotate-180 hover:text-secondary"
+                aria-expanded="false"
+                aria-controls="accordion-panel-4"
+              >
+                <span>What about other Chromium browsers?</span>
+                <img
+                  src="./images/icon-arrow.svg"
+                  alt="Icon arrow"
+                  aria-hidden="true"
+                  class="w-2 h-1 object-contain transition-transform duration-200"
+                />
+              </button>
+            </h3>
+
+            <div
+              id="accordion-panel-4"
+              class="grid grid-rows-[0fr] peer-[&:has(button[aria-expanded='true'])]:grid-rows-[1fr] transition-[grid-template-rows] duration-300"
+              role="region"
+              aria-labelledby="accordion-header-4"
+            >
+              <div class="overflow-hidden pt-2">
+                <p class="tp-2-light-mobile text-start text-primary-shade-50">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                  tincidunt justo eget ultricies fringilla. Phasellus blandit
+                  ipsum quis quam ornare mattis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- End accordion 4  -->
+        </div>
       </div>
     </section>
   </body>
