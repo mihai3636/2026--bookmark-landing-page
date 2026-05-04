@@ -22,19 +22,6 @@
 
     <script type="module" src="./js/main.js"></script>
 
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
-
-    <style>
-      section {
-        /* background-color: red; */
-      }
-      /* input:focus {
-        outline: none;
-      }
-      input:focus-visible {
-        outline: 1px dotted red;
-      } */
-    </style>
     <title>Frontend Mentor | Bookmark landing page</title>
   </head>
   <body class="font-main pt-5 bg-white text-primary-shade" data-open="false">
@@ -593,22 +580,32 @@
         </div>
 
         <form
+          id="formCta"
+          novalidate
           class="body mx-auto max-w-145 space-y-2 grid md:grid-cols-[1fr_auto] md:items-start md:gap-x-2"
         >
-          <div
-            class="accordion-input bg-secondary border-2 border-secondary rounded-[5px]"
-          >
+          <div id="inputAccordion" class="accordion-input rounded-[5px]">
             <div
               class="input-wrapper bg-white rounded-[5px] flex justify-between items-center gap-1 px-2 py-1"
             >
               <input
+                id="inputEmail"
                 type="email"
+                required
                 placeholder="example@email.com"
                 class="tp-2-regular-mobile md:tp-6-regular bg-white w-12/12 outline-none"
               />
-              <img src="./images/icon-error.svg" class="" alt="Icon error" />
+              <img
+                id="iconError"
+                src="./images/icon-error.svg"
+                class="hidden"
+                alt="Icon error"
+              />
             </div>
-            <div class="accordion-content grid grid-rows-1">
+            <div
+              id="accordionContent"
+              class="accordion-content grid grid-rows-[0fr] transition-[grid-template-rows] duration-300"
+            >
               <div class="overflow-hidden">
                 <p class="tp-4-mobile md:tp-7 text-white px-2 py-1">
                   Whoops, make sure it's an email
