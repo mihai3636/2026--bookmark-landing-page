@@ -632,6 +632,9 @@
   .bg-primary {
     background-color: var(--color-primary);
   }
+  .bg-primary-shade {
+    background-color: var(--color-primary-shade);
+  }
   .bg-red-200 {
     background-color: var(--color-red-200);
   }
@@ -1159,6 +1162,16 @@
       align-items: flex-start;
     }
   }
+  .md\:justify-between {
+    @media (width >= 48rem) {
+      justify-content: space-between;
+    }
+  }
+  .md\:gap-0 {
+    @media (width >= 48rem) {
+      gap: var(--spacing-0);
+    }
+  }
   .md\:gap-3 {
     @media (width >= 48rem) {
       gap: var(--spacing-3);
@@ -1404,6 +1417,11 @@
       margin-inline: auto;
     }
   }
+  .lg\:ms-auto {
+    @media (width >= 64rem) {
+      margin-inline-start: auto;
+    }
+  }
   .lg\:mt-35 {
     @media (width >= 64rem) {
       margin-top: calc(var(--spacing) * 35);
@@ -1452,6 +1470,21 @@
   .lg\:justify-items-start {
     @media (width >= 64rem) {
       justify-items: start;
+    }
+  }
+  .lg\:gap-5 {
+    @media (width >= 64rem) {
+      gap: var(--spacing-5);
+    }
+  }
+  .lg\:gap-6 {
+    @media (width >= 64rem) {
+      gap: var(--spacing-6);
+    }
+  }
+  .lg\:gap-8 {
+    @media (width >= 64rem) {
+      gap: var(--spacing-8);
     }
   }
   .lg\:space-y-6 {
