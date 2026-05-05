@@ -352,11 +352,29 @@
   .table {
     display: table;
   }
+  .aspect-\[4\/3\] {
+    aspect-ratio: 4/3;
+  }
   .h-1 {
     height: var(--spacing-1);
   }
   .h-2 {
     height: var(--spacing-2);
+  }
+  .h-\[300px\] {
+    height: 300px;
+  }
+  .h-\[330px\] {
+    height: 330px;
+  }
+  .h-\[380px\] {
+    height: 380px;
+  }
+  .h-\[430px\] {
+    height: 430px;
+  }
+  .h-auto {
+    height: auto;
   }
   .max-h-6 {
     max-height: var(--spacing-6);
@@ -1189,6 +1207,26 @@
   .md\:grid {
     @media (width >= 48rem) {
       display: grid;
+    }
+  }
+  .md\:h-100 {
+    @media (width >= 48rem) {
+      height: calc(var(--spacing) * 100);
+    }
+  }
+  .md\:h-\[340px\] {
+    @media (width >= 48rem) {
+      height: 340px;
+    }
+  }
+  .md\:h-\[360px\] {
+    @media (width >= 48rem) {
+      height: 360px;
+    }
+  }
+  .md\:h-\[400px\] {
+    @media (width >= 48rem) {
+      height: 400px;
     }
   }
   .md\:w-12\/12 {
