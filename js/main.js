@@ -29,6 +29,8 @@ const btnAccordions = [
 console.log(btnNavMobile);
 
 btnNavMobile.addEventListener("click", () => {
+  document.body.classList.toggle("overflow-hidden");
+
   let currentStatus = document.body.dataset.open;
   if (currentStatus == null) currentStatus = "false";
 
@@ -72,6 +74,9 @@ function clearError() {
   inputAccordionEl.classList.remove("outline-2");
   inputAccordionEl.classList.remove("outline-secondary");
   iconErrorEl.classList.add("hidden");
+
+  accordionContentEl.classList.add("grid-rows-[0fr]");
+  accordionContentEl.classList.remove("grid-rows-[1fr]");
 }
 
 function initTabs() {
