@@ -84,12 +84,12 @@
           </nav>
 
           <nav
-            class="lg:hidden -translate-y-[200%] in-data-[open='true']:translate-y-0 transition-transform duration-200 fixed inset-0 pt-9 px-4 bg-background-transparent z-50 overflow-y-auto"
+            class="lg:hidden -translate-y-[200%] in-data-[open='true']:translate-y-0 transition-transform duration-200 fixed inset-0 pt-9 px-4 bg-background-transparent z-50"
           >
             <div
-              class="container mx-auto pt-3 text-4 leading-[1.7] tracking-[2.31px] uppercase text-white"
+              class="container mx-auto h-full overflow-y-auto pt-3 text-4 leading-[1.7] tracking-[2.31px] uppercase text-white"
             >
-              <ul class="flex flex-col text-center">
+              <ul class="flex flex-col pb-3 text-center min-h-full">
                 <li
                   class="border-grey-transparent border-t-[1.2px] border-solid py-3 md:py-4"
                 >
@@ -114,13 +114,15 @@
                     >Login</a
                   >
                 </li>
+                <li
+                  class="socia mt-auto flex justify-center items-center gap-5"
+                >
+                  <a href="#"
+                    ><img src="./images/icon-facebook.svg" alt=""
+                  /></a>
+                  <a href="#"><img src="./images/icon-twitter.svg" alt="" /></a>
+                </li>
               </ul>
-              <div
-                class="social absolute bottom-6 left-[50%] translate-x-[-50%] flex items-center gap-5"
-              >
-                <a href="#"><img src="./images/icon-facebook.svg" alt="" /></a>
-                <a href="#"><img src="./images/icon-twitter.svg" alt="" /></a>
-              </div>
             </div>
           </nav>
 
