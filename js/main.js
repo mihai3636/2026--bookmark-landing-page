@@ -72,9 +72,6 @@ function clearError() {
   inputAccordionEl.classList.remove("outline-2");
   inputAccordionEl.classList.remove("outline-secondary");
   iconErrorEl.classList.add("hidden");
-
-  accordionContentEl.classList.remove("grid-rows-[1fr]");
-  accordionContentEl.classList.add("grid-rows-[0fr]");
 }
 
 function initTabs() {

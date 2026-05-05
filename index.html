@@ -24,7 +24,10 @@
 
     <title>Frontend Mentor | Bookmark landing page</title>
   </head>
-  <body class="font-main pt-5 bg-white text-primary-shade" data-open="false">
+  <body
+    class="font-main pt-5 bg-white text-primary-shade data-[open=true]:overflow-hidden"
+    data-open="false"
+  >
     <header class="px-4 md:px-6 lg:px-8">
       <div class="container mx-auto">
         <div class="flex justify-between items-center">
@@ -81,7 +84,7 @@
           </nav>
 
           <nav
-            class="lg:hidden -translate-y-full in-data-[open='true']:translate-y-0 transition-transform duration-200 fixed inset-0 pt-9 px-4 bg-background-transparent z-50"
+            class="lg:hidden -translate-y-[200%] in-data-[open='true']:translate-y-0 transition-transform duration-200 fixed inset-0 pt-9 px-4 bg-background-transparent z-50 overflow-y-auto"
           >
             <div
               class="container mx-auto pt-3 text-4 leading-[1.7] tracking-[2.31px] uppercase text-white"
